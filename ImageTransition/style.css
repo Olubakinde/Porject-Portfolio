@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Recommended to include box-sizing for consistent sizing */
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    padding: 40px;
+    gap: 20px;
+}
+
+.container h3 {
+    color: black;
+}
+
+.img-box {
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+    line-height: 0;
+    background-color: white;
+    border-radius: 35px;
+    background-image: url(img/background.png);
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrap {
+    width: 20px;
+    position: absolute;
+    border-radius: 35px;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+span {
+    width: 1px;
+    height: 100%;
+    cursor: ew-resize;
+    background: white;
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+.arrow {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.next {
+    width: 7%; /* Adjusted width to fit both elements side by side */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+
+.next img {
+    border-radius: 50%;
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.next img:hover{
+    background-color: rgb(177, 169, 169);
+}
+
+.img-box2 {
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+    line-height: 0;
+    background-color: white;
+    border-radius: 35px;
+    background-image: url(img/background.png);
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrap2 {
+    width: 20px;
+    position: absolute;
+    border-radius: 35px;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+header img {
+    width: 200px;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}

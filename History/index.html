@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Treasure Map</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="map">
+        <div class="treasures">
+            <div class="treasure" data-info="Mona Lisa">
+                <img src="IMG/mona.jpeg" alt="Mona Lisa">
+                <div class="treasure-caption">Mona Lisa</div>
+            </div>
+
+            <div class="treasure" data-info="Washington">
+                <img src="IMG/washingtn.jpg" alt="Washington">
+                <div class="treasure-caption">Washington crossing the Delaware</div>
+            </div>
+
+            <div class="treasure" data-info="Neil-Armstrong">
+                <img src="IMG/space.jpg" alt="Neil-Armstrong">
+                <div class="treasure-caption">Neil Armstrong</div>
+            </div>
+
+            <div class="treasure" data-info="WW1">
+                <img src="IMG/ww1.jpeg" alt="WW1">
+                <div class="treasure-caption">World War 1</div>
+            </div>
+            <!-- Add more treasure locations as needed -->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>History Input</h2>
+            <textarea id="history-input" rows="6" placeholder="Write about the history of this image..."></textarea>
+            <button id="save-history-btn">Save</button>
+        </div>
+    </div>
+
+    <!-- Navigation arrows -->
+    <button id="prev-btn">&lt;</button>
+    <button id="next-btn">&gt;</button>
+</body>
+</html>

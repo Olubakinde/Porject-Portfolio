@@ -1,0 +1,176 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("IMG/His-bACK.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limit map width for larger screens */
+    margin: 0 auto; /* Center map horizontally */
+    padding: 20px;
+    flex-wrap: wrap; /* Allow treasures to wrap on smaller screens */
+}
+
+.treasures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure treasures wrap to new line on smaller screens */
+}
+
+.treasure {
+    position: relative;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: scale(0.8); /* Scale down the image */
+    flex: 1 0 300px; /* Flexible width, min-width 300px */
+    max-width: 300px; /* Maximum width for each treasure */
+    min-width: 200px; /* Minimum width for each treasure */
+    text-align: center;
+}
+
+.treasure img {
+    max-width: 100%;
+    height: auto; /* Ensure image height scales proportionally */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    transition: transform 0.3s ease;
+}
+
+.treasure:hover {
+    transform: scale(1.08); /* Scale up on hover */
+}
+
+.treasure-caption {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#prev-btn,
+#next-btn {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 50%;
+    padding: 10px 20px;
+    font-size: 40px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    cursor: pointer;
+    z-index: 998;
+    transition: 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border-radius: 50%;
+    color: white;
+}
+
+#prev-btn {
+    left: 20px; /* Adjust to the left edge */
+}
+
+#next-btn {
+    right: 20px; /* Adjust to the right edge */
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999; /* Ensure it appears on top of everything else */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+}
+
+.modal-content {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#history-input {
+    border: 2px solid white;
+    border-radius: 15px;
+    color: white;
+    background-color: grey;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+#history-input::placeholder {
+    color: white; /* Set placeholder text color to white */
+}
+
+#save-history-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#save-history-btn:hover {
+    background-color: #45a049;
+}

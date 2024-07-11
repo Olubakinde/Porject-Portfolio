@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url("./soil.png");
+    background-size: cover;
+}
+
+h1 {
+    color: #4CAF50; /* Green color for title */
+    margin-top: 0;
+}
+
+header {
+    margin-right: 90%;
+}
+
+header a img{
+    width: 120%;
+    border-radius: 15px;
+}
+
+header a img:hover {
+    transform: scale(1.05);
+}
+
+#score-container {
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: white;
+    background-color: #4CAF50; /* Green background for score container */
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#board {
+    height: 450px;
+    width: 450px;
+    background-color: green;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: url("./soil.png");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#board div {
+    width: 150px;
+    height: 150px;
+    background: url("./pipe.png");
+    background-size: cover;
+}
+
+#board div img {
+    /* all img tags inside the tile div */
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#reset {
+    color: red;
+    cursor: pointer;
+}

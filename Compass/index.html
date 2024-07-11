@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Compass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="compass" id="compass">
+            <div class="needle" id="needle"></div>
+            <div class="center-disc"></div>
+            <div class="direction-marker" style="transform: rotate(0deg) translateY(-160px);">N</div>
+            <div class="direction-marker" style="transform: rotate(45deg) translateY(-160px);">NE</div>
+            <div class="direction-marker" style="transform: rotate(90deg) translateY(-160px);">E</div>
+            <div class="direction-marker" style="transform: rotate(135deg) translateY(-160px);">SE</div>
+            <div class="direction-marker" style="transform: rotate(180deg) translateY(-160px);">S</div>
+            <div class="direction-marker" style="transform: rotate(225deg) translateY(-160px);">SW</div>
+            <div class="direction-marker" style="transform: rotate(270deg) translateY(-160px);">W</div>
+            <div class="direction-marker" style="transform: rotate(315deg) translateY(-160px);">NW</div>
+        </div>
+        <div class="controls">
+            <input type="color" id="colorPicker" value="#FF0000">
+            <button id="toggleNeedle">Toggle Needle</button>
+            <button id="toggleTheme">Toggle Theme</button>
+            <button id="toggleMode">Toggle Mode</button>
+        </div>
+        <div class="direction" id="direction"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
