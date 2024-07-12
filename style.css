@@ -42,12 +42,12 @@ p {
     transform: scale(1.05);
 }
 
-#imgt, #wac, #ttt, #hovie, #tdl, #wth, #qr, #bams, #watch, #comp, #His {
+#imgt, #wac, #ttt, #hovie, #tdl, #wth, #qr, #bams, #watch, #comp, #His, #pclock {
     height: 145px;
     border-radius: 40px;
 }
 
-#imgt, #tdl, #wth, #qr, #watch, #comp, #His {
+#imgt, #tdl, #wth, #qr, #watch, #comp, #His, #pclock {
     border: 3px solid black;
 }
 

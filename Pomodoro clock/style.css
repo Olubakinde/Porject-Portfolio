@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.tabs {
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.tab-button:hover, .tab-button.active {
+    background: #feb47b;
+    transform: scale(1.1);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.clock {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+button {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #feb47b;
+    transform: scale(1.1);
+}
+
+.settings {
+    margin-top: 20px;
+}
+
+input[type="number"], input[type="time"] {
+    width: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 10px;
+}

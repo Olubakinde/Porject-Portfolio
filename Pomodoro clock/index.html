@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Clock</h1>
+        <div class="tabs">
+            <button class="tab-button active" data-target="#pomodoro">Pomodoro</button>
+            <button class="tab-button" data-target="#clock">Clock</button>
+            <button class="tab-button" data-target="#alarm">Alarm</button>
+        </div>
+        <div class="tab-content" id="pomodoro">
+            <div class="clock">
+                <div id="time">25:00</div>
+                <div class="controls">
+                    <button id="start">Start</button>
+                    <button id="pause">Pause</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+            <div class="settings">
+                <label for="session">Session Length: </label>
+                <input type="number" id="session" value="25" min="1" max="60"> minutes
+                <label for="break">Break Length: </label>
+                <input type="number" id="break" value="5" min="1" max="30"> minutes
+            </div>
+        </div>
+        <div class="tab-content" id="clock">
+            <div class="clock">
+                <div id="current-time"></div>
+            </div>
+        </div>
+        <div class="tab-content" id="alarm">
+            <div class="clock">
+                <input type="time" id="alarm-time">
+                <button id="set-alarm">Set Alarm</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
