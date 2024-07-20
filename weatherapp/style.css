@@ -6,20 +6,42 @@
 }
 
 body {
-    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    background: #f0f0f0;
     background-size: 200% 200%;
     animation: gradientBG 15s ease infinite;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Ensure body is a column flex container */
     align-items: center;
     height: 100vh;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 @keyframes gradientBG {
     0% { background-position: 0% 0%; }
     50% { background-position: 100% 100%; }
     100% { background-position: 0% 0%; }
+}
+
+header {
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 10; /* Ensure header is on top */
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    width: 80%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
 }
 
 .card {
@@ -30,6 +52,7 @@ body {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     padding: 20px;
     text-align: center;
+    margin: 20px 0; /* Space between header and card */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
@@ -136,7 +159,7 @@ body {
     margin: 10px 0;
     color: #333;
     font-family: 'Roboto', sans-serif;
-    animation: fadeIn 1s ease-in-out, slideUp 0.5s ease-out;
+    animation: fadeIn 5s ease-in-out, slideUp 0.1s ease-out;
 }
 
 .city {
